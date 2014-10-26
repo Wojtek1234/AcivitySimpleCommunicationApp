@@ -7,5 +7,7 @@
     <string name="title_activity_second">SecondActiv</string>
     <string name="firsthint">first tekst</string>
     <string name="secondhint">second text</string>
+    <string name="waitForResult">Czekaj na zwrotke</string>
+    <string name="title_activity_result">ResultActivity</string>
 
 </resources>

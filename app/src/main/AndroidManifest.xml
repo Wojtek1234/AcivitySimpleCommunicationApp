@@ -10,17 +10,21 @@
         <activity
             android:name=".FirstActivity"
             android:label="First Activity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActiv"
-                  android:label="SecondActiv"
-                  android:launchMode="singleTask"
-            ></activity>
+        <activity
+            android:name=".SecondActiv"
+            android:label="SecondActiv"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
     </application>
 
 </manifest>

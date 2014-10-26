@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 public class FirstActivity extends Activity {
     public static final String message = "MESSAGE";
+    public static final int GOOD=1;
+    public static final String REQUEST_MESSAGE="REQUEST_MASSAGE";
+    public static final int REQUEST_NUMBER=123;
     public static final String message2 = "MESSAGE2";
 
     @Override
@@ -30,6 +33,31 @@ public class FirstActivity extends Activity {
             }
         });
 
+        Button button2 = (Button) findViewById(R.id.button2First);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityForResult();
+            }
+        });
+    }
+
+    private void openActivityForResult() {
+        Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+        startActivityForResult(intent,REQUEST_NUMBER);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode==REQUEST_NUMBER){
+            if(resultCode==GOOD){
+                TextView textView = (TextView) findViewById(R.id.textFirst);
+                textView.setText(data.getStringExtra(REQUEST_MESSAGE));
+
+            }
+        }
     }
 
     @Override
@@ -47,7 +75,7 @@ public class FirstActivity extends Activity {
         intent.putExtra(message, editText.getText().toString());
         intent.putExtra(message2, editText2.getText().toString());
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        getApplicationContext().startActivity(intent);
+        startActivity(intent);
 
     }
 

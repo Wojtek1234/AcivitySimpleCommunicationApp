@@ -39,5 +39,13 @@
         android:layout_below="@+id/edit2First"
         android:layout_centerHorizontal="true"
         android:text="przeslij/odpowiedz"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2First"
+        android:layout_below="@+id/buttonFirst"
+        android:layout_centerHorizontal="true"
+        android:text="@string/waitForResult"/>
+
 
 </RelativeLayout>
