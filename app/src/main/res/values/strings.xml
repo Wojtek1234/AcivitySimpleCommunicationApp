@@ -5,5 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_second">SecondActiv</string>
+    <string name="firsthint">first tekst</string>
+    <string name="secondhint">second text</string>
 
 </resources>

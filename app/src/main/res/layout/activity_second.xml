@@ -18,7 +18,17 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/editSecond"
+        android:hint="@string/firsthint"
         android:layout_below="@+id/textSecond"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit2Second"
+        android:hint="@string/secondhint"
+        android:layout_below="@+id/editSecond"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="56dp" />
@@ -26,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSecond"
-        android:layout_below="@+id/editSecond"
+        android:layout_below="@+id/edit2Second"
         android:layout_centerHorizontal="true"
         android:text="przeslij/odpowiedz"/>
 
