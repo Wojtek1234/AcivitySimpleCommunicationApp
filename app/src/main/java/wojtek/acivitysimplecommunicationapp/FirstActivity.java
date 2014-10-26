@@ -17,6 +17,7 @@ public class FirstActivity extends Activity {
         setContentView(R.layout.activity_first);
 
 
+
         TextView textView=(TextView)findViewById(R.id.textFirst);
         textView.setText(doOnExtraRecive(savedInstanceState));
 
@@ -45,6 +46,7 @@ public class FirstActivity extends Activity {
 
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         getApplicationContext().startActivity(intent);
+        finish();
     }
 
 

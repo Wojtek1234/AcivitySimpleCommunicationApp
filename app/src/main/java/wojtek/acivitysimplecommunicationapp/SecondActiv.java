@@ -41,7 +41,9 @@ public class SecondActiv extends Activity {
         intent.putExtra("message",editText.getText().toString());
 
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
         getApplicationContext().startActivity(intent);
+        finish();
     }
 
 
